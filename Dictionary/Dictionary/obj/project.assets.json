@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Dictionary\\Dictionary\\MyDictionary.csproj",
-      "projectName": "MyDictionary",
-      "projectPath": "C:\\Users\\Hp\\source\\repos\\Dictionary\\Dictionary\\MyDictionary.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\Dictionary\\Dictionary\\Dictionaryy.csproj",
+      "projectName": "Dictionaryy",
+      "projectPath": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\Dictionary\\Dictionary\\Dictionaryy.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\source\\repos\\Dictionary\\Dictionary\\obj\\",
+      "outputPath": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\Dictionary\\Dictionary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
