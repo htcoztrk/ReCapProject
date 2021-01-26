@@ -1,0 +1,11 @@
+C:\Users\Hp\source\repos\Dictionary\Dictionary\bin\Debug\netcoreapp2.0\MyDictionary.deps.json
+C:\Users\Hp\source\repos\Dictionary\Dictionary\bin\Debug\netcoreapp2.0\MyDictionary.runtimeconfig.json
+C:\Users\Hp\source\repos\Dictionary\Dictionary\bin\Debug\netcoreapp2.0\MyDictionary.runtimeconfig.dev.json
+C:\Users\Hp\source\repos\Dictionary\Dictionary\bin\Debug\netcoreapp2.0\MyDictionary.dll
+C:\Users\Hp\source\repos\Dictionary\Dictionary\bin\Debug\netcoreapp2.0\MyDictionary.pdb
+C:\Users\Hp\source\repos\Dictionary\Dictionary\obj\Debug\netcoreapp2.0\MyDictionary.csprojResolveAssemblyReference.cache
+C:\Users\Hp\source\repos\Dictionary\Dictionary\obj\Debug\netcoreapp2.0\MyDictionary.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\Dictionary\Dictionary\obj\Debug\netcoreapp2.0\MyDictionary.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\Dictionary\Dictionary\obj\Debug\netcoreapp2.0\MyDictionary.AssemblyInfo.cs
+C:\Users\Hp\source\repos\Dictionary\Dictionary\obj\Debug\netcoreapp2.0\MyDictionary.dll
+C:\Users\Hp\source\repos\Dictionary\Dictionary\obj\Debug\netcoreapp2.0\MyDictionary.pdb
