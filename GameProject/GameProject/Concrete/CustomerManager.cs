@@ -9,7 +9,7 @@ namespace GameProject.Concrete
     {
         public void Add(Customer customer)
         {
-            Console.WriteLine(customer.FirstName+" "+customer.LastName+"added sucesfully");
+          Console.WriteLine(customer.FirstName+" "+customer.LastName+"added sucesfully");
         }
         public void Update(Customer customer)
         {
@@ -19,7 +19,7 @@ namespace GameProject.Concrete
         {
             Console.WriteLine("User deleted.");
         }
-        
+
 
     }
 }

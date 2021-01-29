@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\GameProject\\GameProject\\GameProject.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\GameProject\\GameProject\\GameProject.csproj",
       "projectName": "GameProject",
-      "projectPath": "C:\\Users\\Hp\\source\\repos\\GameProject\\GameProject\\GameProject.csproj",
+      "projectPath": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\GameProject\\GameProject\\GameProject.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\source\\repos\\GameProject\\GameProject\\obj\\",
+      "outputPath": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\GameProject\\GameProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

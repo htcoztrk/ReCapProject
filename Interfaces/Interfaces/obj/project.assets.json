@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Interfaces\\Interfaces\\Interfaces.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\Interfaces\\Interfaces\\Interfaces.csproj",
       "projectName": "Interfaces",
-      "projectPath": "C:\\Users\\Hp\\source\\repos\\Interfaces\\Interfaces\\Interfaces.csproj",
+      "projectPath": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\Interfaces\\Interfaces\\Interfaces.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\source\\repos\\Interfaces\\Interfaces\\obj\\",
+      "outputPath": "C:\\Users\\Hp\\source\\repos\\KodlamaİO\\Interfaces\\Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
