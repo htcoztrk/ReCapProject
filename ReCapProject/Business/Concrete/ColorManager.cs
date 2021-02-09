@@ -1,13 +1,12 @@
-﻿using Business.Abstract;
-using DataAccess.Abstract;
-using System;
+﻿
 using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
+using Business.Abstract;
+using DataAccess.Abstract;
+using Entities.Concrete;
 
 namespace Business.Concrete
 {
-    public class ColorManager : IColorService
+    public class ColorManager :IColorService
     {
         IColorDal _colorDal;
         public ColorManager(IColorDal colorDal)
@@ -32,12 +31,12 @@ namespace Business.Concrete
 
         public Color GetCarsByColorId(int id)
         {
-            return _colorDal.Get(n => n.ColorId == id);
+            return _colorDal.Get(c => c.ColorId == id);
         }
 
         public void Update(Color color)
         {
-            throw new NotImplementedException();
+             _colorDal.Update(color);
         }
     }
 }
