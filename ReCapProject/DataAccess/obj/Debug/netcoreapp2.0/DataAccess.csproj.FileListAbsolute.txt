@@ -10,3 +10,15 @@ C:\Users\Hp\source\repos\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAcc
 C:\Users\Hp\source\repos\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csproj.CopyComplete
 C:\Users\Hp\source\repos\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.dll
 C:\Users\Hp\source\repos\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.deps.json
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\bin\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\bin\Debug\netcoreapp2.0\Entities.dll
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\bin\Debug\netcoreapp2.0\Entities.pdb
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.AssemblyInfo.cs
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csproj.CopyComplete
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.pdb

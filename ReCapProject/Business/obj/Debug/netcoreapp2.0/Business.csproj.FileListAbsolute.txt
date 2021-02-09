@@ -12,3 +12,17 @@ C:\Users\Hp\source\repos\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.
 C:\Users\Hp\source\repos\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.csproj.CopyComplete
 C:\Users\Hp\source\repos\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.dll
 C:\Users\Hp\source\repos\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.pdb
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\bin\Debug\netcoreapp2.0\Business.deps.json
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\bin\Debug\netcoreapp2.0\Business.dll
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\bin\Debug\netcoreapp2.0\Business.pdb
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\bin\Debug\netcoreapp2.0\DataAccess.dll
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\bin\Debug\netcoreapp2.0\Entities.dll
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\bin\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\bin\Debug\netcoreapp2.0\Entities.pdb
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.csprojResolveAssemblyReference.cache
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfo.cs
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.csproj.CopyComplete
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.dll
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\Business\obj\Debug\netcoreapp2.0\Business.pdb

@@ -1,14 +1,187 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "signature": "25c86003378bf2254b890b9c7079a9068014f98a"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "Entities/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.11"
+        },
         "runtime": {
           "Entities.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.HashCode.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore/3.1.11": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "Microsoft.Bcl.HashCode": "1.1.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.1.11",
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.11",
+          "Microsoft.Extensions.Caching.Memory": "3.1.11",
+          "Microsoft.Extensions.DependencyInjection": "3.1.11",
+          "Microsoft.Extensions.Logging": "3.1.11",
+          "System.Collections.Immutable": "1.7.1",
+          "System.ComponentModel.Annotations": "4.7.0",
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/3.1.11": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/3.1.11": {},
+      "Microsoft.Extensions.Caching.Abstractions/3.1.11": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/3.1.11": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "3.1.11",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.11",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.11",
+          "Microsoft.Extensions.Options": "3.1.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/3.1.11": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.1.11": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/3.1.11": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.1.11": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.11": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging/3.1.11": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "3.1.11",
+          "Microsoft.Extensions.DependencyInjection": "3.1.11",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.11",
+          "Microsoft.Extensions.Options": "3.1.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/3.1.11": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Options/3.1.11": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.11",
+          "Microsoft.Extensions.Primitives": "3.1.11",
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.1.11": {
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "System.Collections.Immutable/1.7.1": {
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/4.7.1": {
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       }
     }
@@ -18,6 +191,160 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TM5+ytmbqucLH4Fc0EdDHyhKRmNC5EVvkpvvJIkfRdYA2QA38NRcqXsbikU7URRdwhW5gHrBzosrjPRWMDNCBA==",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.1",
+      "hashPath": "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.Bcl.HashCode/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UMESB/MTHGSZ1lc9M8CVHt7NupRLzQh2K1qRK5pMnNOETUx/4ZaGwhliM2XW93QIGKglIAzkV1sUwHmx9/xvPg==",
+      "path": "microsoft.bcl.hashcode/1.1.1",
+      "hashPath": "microsoft.bcl.hashcode.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qvGTPONNdA41vG7eQl88xC82Ykm66ag/IAdz4oHBc1ynNd0EsS25REQaNcKe3xQxj4SXoO1GJ1XIIpZc5imADg==",
+      "path": "microsoft.entityframeworkcore/3.1.11",
+      "hashPath": "microsoft.entityframeworkcore.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a5ER1Ao41fDlBAdwxjr5eKnXgD9tJ5KhJPf7MZWwI3F+veZKegUYJngvtGYgHEh0q6Q4n1I7pba1oFrRuJubaQ==",
+      "path": "microsoft.entityframeworkcore.abstractions/3.1.11",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-km3p6piOfGB516m/jw2lthjXwBauSLbBAdEKL5x05Lp73vEXNvp4iXC9FLqFU6HoKJu3NVeTeBgmf2eBqJ3SyQ==",
+      "path": "microsoft.entityframeworkcore.analyzers/3.1.11",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tb9qop1zltZhOrdX9xJFPeBDh641fF9RZI0/ePeNoyPQOBa0GzXWB8NHBSFbvZk1dQJGgp95QOhroUfPeQYmkg==",
+      "path": "microsoft.extensions.caching.abstractions/3.1.11",
+      "hashPath": "microsoft.extensions.caching.abstractions.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Memory/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ssolrq8lpyuDBHk5dcUlS6n//bv9PYdxdA8MBWTSErM0RWVm8wLBg+w8cHc72mPCjQpatWKovmel2RLXEmXAqA==",
+      "path": "microsoft.extensions.caching.memory/3.1.11",
+      "hashPath": "microsoft.extensions.caching.memory.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6/48j+c+4Cw6MyQoSbK4CX4j436OJzTOIisK9tP2ru5ZdmjFPvuH4FZO4RRXGWarS8PO/Oj1SXt/Sg+xnGqg4g==",
+      "path": "microsoft.extensions.configuration/3.1.11",
+      "hashPath": "microsoft.extensions.configuration.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fVEgx+KXlUtUb+6W1ZwBhgw5tS7+Iypou1Fz4f+17lE7IAZGlWycHzqtXQnyPrAv5BBm5aQEtqey6C4M/V8ADA==",
+      "path": "microsoft.extensions.configuration.abstractions/3.1.11",
+      "hashPath": "microsoft.extensions.configuration.abstractions.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IOrR5aJreMgZc516ACLaQrqza8SapURHHbBGPcqJDeGjzjc3p/T9RMD3poFqW3QZf4aTJN6Tg977WCYd6DlNYA==",
+      "path": "microsoft.extensions.configuration.binder/3.1.11",
+      "hashPath": "microsoft.extensions.configuration.binder.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M7mhOX7NLVMtUuTN6LenmrwdWXahOTfjyK0FOJpt4pi2dwTD2dR2n1smijS8oQRcImu7CoJU6YBz7sw8nLLjuQ==",
+      "path": "microsoft.extensions.dependencyinjection/3.1.11",
+      "hashPath": "microsoft.extensions.dependencyinjection.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/ewyXNyLr87HuG92qMSFbB1VHDe0ZVqatxcA/9Z30sV3w1z0kCdzy8LYvzCpWAOJfj/MsXFPSyTdseaxPssT8A==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.11",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wQRRvZr5N2e6Qosh4koIc2ojDJJp9sKE7gCcsWyX7V1EVv0WfgXGgg273uJ7Zeniro0DR7IN+BNaTXDoEAcI+g==",
+      "path": "microsoft.extensions.logging/3.1.11",
+      "hashPath": "microsoft.extensions.logging.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sb0hzZ7R/dgFSRS28wBOjoYWP1Vrkp6wE98dUTKI3M5ok/4zBiXLPX0ZLBnQpM9hSdqEN5PyHomhq5pzETLAdg==",
+      "path": "microsoft.extensions.logging.abstractions/3.1.11",
+      "hashPath": "microsoft.extensions.logging.abstractions.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CMd5sP4YWvXa/B5eD0/hN9h6mEFWTYCyEmA+zEBNI27WPbKhnBPSby3K2tl579yUYXHnCUH+yehsk/7c2tcBKg==",
+      "path": "microsoft.extensions.options/3.1.11",
+      "hashPath": "microsoft.extensions.options.3.1.11.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/3.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CWxXwxFMx5edIOXvEdODxiEO6REixDGROw89PO0Hu3KdxVQ4BXgy2OWiUUdnUSMRXVkr2Sb+IOtD/+U9EkpanA==",
+      "path": "microsoft.extensions.primitives/3.1.11",
+      "hashPath": "microsoft.extensions.primitives.3.1.11.nupkg.sha512"
+    },
+    "System.Collections.Immutable/1.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0mPMLJClN+3Em84zRJD9CdiIpQ9beT5C6JEzrY25VE81a9V0WnNcS4G3aHvBuOTfnI1k44jIQzNhp3VZHd7ddg==",
+      "path": "system.collections.immutable/1.7.1",
+      "hashPath": "system.collections.immutable.1.7.1.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oG58v7FkIMewZU1tNyqKbnilEobW6I4W0xy0Q/hztjVbTVr83oXNPHwrvS24JJKrDylLingIlI/zmCHCZ5vq1A==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zf1/2hdUgbYDrXMOLsK39n/4O1FF+bktOlT816aSzqMPDt3VOjEmuYB3mJ5GC8L6r3fN8gu2ZFvUolxEghvLsA==",
+      "path": "system.diagnostics.diagnosticsource/4.7.1",
+      "hashPath": "system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-js5UkesP4zK8GQ9Az3azvu4MX5ljJQNIYb4iH9sP8C/Vnk9wILPEofKaRX92/3bEyV1G04VV5PSMejvxcth5Zg==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yNeB/qz3nz7/wcIxqEvrD6HoafvqodlLo+hNt1r+kV4EXDnOBZMx/kiVZTTc69zVT9l6sZnmoJC93FJQ4gjuUg==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.1",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aAUghud9PHGYc3o9oWPWd0C3xE+TJQw5ZZs78htlR6mr9ky/QEgfXHjyQ2GvOq9H1S0YizcVVKCSin92ZcH8FA==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     }
   }
 }
