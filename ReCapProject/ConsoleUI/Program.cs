@@ -18,9 +18,48 @@ namespace ConsoleUI
             // TestToAdd(carManager,brandManager, colorManager);
             // TestToUpdate(carManager, brandManager, colorManager);
             //TestToDelete(carManager, brandManager, colorManager);
+
+            //List of tables
+            ListOfCar(carManager);
+            ListOfColor(colorManager);
+            ListOfBrand(brandManager);
+
+            Console.WriteLine("*********Car with Colorid= 3********************");
+            foreach (var c in carManager.GetCarsByColorId(3))
+            {
+                Console.WriteLine("Car with Colorid=3"+c.CarId+" "+c.Description);
+            }
+
             Console.ReadKey();
         }
-        
+        static void ListOfCar(CarManager carManager)
+        {
+            Console.WriteLine("*********List Of Car***********");
+            foreach (var car in carManager.GetAll())
+            {
+                Console.WriteLine(car.CarId +" "+ car.DailyPrice+" "+car.Description+" "+car.ModelYear);
+
+            }
+            
+        }
+        static void ListOfColor(ColorManager colorManager)
+        {
+            Console.WriteLine("*********List Of Color***********");
+            foreach (var color in colorManager.GetAll())
+            {
+                Console.WriteLine(color.ColorId + " " + color.ColorName);
+
+            }
+        }
+        static void ListOfBrand(BrandManager brandManager)
+        {
+            Console.WriteLine("*********List Of Brand***********");
+            foreach (var brand in brandManager.GetAll())
+            {
+                Console.WriteLine(brand.BrandId + " " +brand.BrandName);
+
+            }
+        }
         static void TestToAdd(CarManager carManager , BrandManager brandManager, ColorManager colorManager)
         {
             Console.WriteLine("************Testing to Add operation***********");
