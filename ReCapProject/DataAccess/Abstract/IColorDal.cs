@@ -7,6 +7,6 @@ namespace DataAccess.Abstract
 {
     public interface IColorDal : IEntityRepostory<Color>
     {
-        Color Get(Func<Color, bool> p);
+        
     }
 }

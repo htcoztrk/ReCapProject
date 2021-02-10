@@ -30,6 +30,7 @@ namespace Business.Concrete
         public void Delete(Brand brand)
         {
             _brandDal.Delete(brand);
+            Console.WriteLine("Brand deleted successfully.");
         }
 
         public List<Brand> GetAll()

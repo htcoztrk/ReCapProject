@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using Business.Abstract;
 using DataAccess.Abstract;
@@ -17,11 +18,13 @@ namespace Business.Concrete
         public void Add(Color color)
         {
             _colorDal.Add(color);
+            Console.WriteLine("Color added successfully.");
         }
 
         public void Delete(Color color)
         {
             _colorDal.Delete(color);
+            Console.WriteLine("Color deleted successfully.");
         }
 
         public List<Color> GetAll()
@@ -37,6 +40,7 @@ namespace Business.Concrete
         public void Update(Color color)
         {
              _colorDal.Update(color);
+            Console.WriteLine("Color updated successfully.");
         }
     }
 }

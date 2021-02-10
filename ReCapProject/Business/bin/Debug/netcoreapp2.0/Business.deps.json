@@ -10,7 +10,7 @@
         "dependencies": {
           "DataAccess": "1.0.0",
           "Entities": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "3.1.11"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
         },
         "runtime": {
           "Business.dll": {}
@@ -1140,7 +1140,7 @@
       "DataAccess/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "3.1.11"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.11"
         },
         "runtime": {
           "DataAccess.dll": {}
