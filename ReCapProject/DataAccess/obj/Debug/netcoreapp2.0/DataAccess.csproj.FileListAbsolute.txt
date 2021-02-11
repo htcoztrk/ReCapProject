@@ -22,3 +22,5 @@ C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp
 C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.csproj.CopyComplete
 C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.dll
 C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\obj\Debug\netcoreapp2.0\DataAccess.pdb
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\bin\Debug\netcoreapp2.0\Core.dll
+C:\Users\Hp\source\repos\KodlamaİO\ReCapProject\DataAccess\bin\Debug\netcoreapp2.0\Core.pdb

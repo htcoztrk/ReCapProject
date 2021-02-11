@@ -16,13 +16,15 @@ namespace ConsoleUI
             BrandManager brandManager = new BrandManager(new EfBrandDal());
 
             // TestToAdd(carManager,brandManager, colorManager);
-             TestToUpdate(carManager, brandManager, colorManager);
+            //TestToUpdate(carManager, brandManager, colorManager);
             //TestToDelete(carManager, brandManager, colorManager);
 
             //List of tables
             //ListOfCar(carManager);
             //ListOfColor(colorManager);
             //ListOfBrand(brandManager);
+
+            GetCarDetail(carManager);
 
             //Console.WriteLine("*********Car with Colorid= 3********************");
             //foreach (var c in carManager.GetCarsByColorId(3))
@@ -31,6 +33,15 @@ namespace ConsoleUI
             //}
 
             Console.ReadKey();
+        }
+        static void GetCarDetail(CarManager carManager)
+        {
+            Console.WriteLine("*********Details Of Car***********");
+            foreach (var car in carManager.GetCarDetails())
+            {
+                Console.WriteLine("CAR NAME: "+car.CarName + " " +"BRAND NAME: "+ car.BrandName + " " + "COLOR NAME: "+car.ColorName +  " "+"DAILY PRICE: " +car.DailyPrice );
+
+            }
         }
         static void ListOfCar(CarManager carManager)
         {
