@@ -19,8 +19,16 @@ namespace Business.Concrete
         {
             if (car.DailyPrice > 0)
             {
-                _carDal.Add(car);
-                Console.WriteLine("Car added successfully.");
+                if (car.CarName.Length>2)
+                {
+                    _carDal.Add(car);
+                    Console.WriteLine("Car added successfully.");
+                }
+                else
+                {
+                    Console.WriteLine("Car Name must be longer than 2.");
+                }
+                
             }
             else
             {
