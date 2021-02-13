@@ -37,16 +37,26 @@ namespace ConsoleUI
         static void GetCarDetail(CarManager carManager)
         {
             Console.WriteLine("*********Details Of Car***********");
-            foreach (var car in carManager.GetCarDetails())
+            var result = carManager.GetCarDetails();
+            if (result.Success)
             {
-                Console.WriteLine("CAR NAME: "+car.CarName + " " +"BRAND NAME: "+ car.BrandName + " " + "COLOR NAME: "+car.ColorName +  " "+"DAILY PRICE: " +car.DailyPrice );
+                foreach (var car in result.Data)
+                {
+                    Console.WriteLine("CAR NAME: " + car.CarName + " " + "BRAND NAME: " + car.BrandName + " " + "COLOR NAME: " + car.ColorName + " " + "DAILY PRICE: " + car.DailyPrice);
 
+                }
+                Console.WriteLine(result.Message);
             }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+           
         }
         static void ListOfCar(CarManager carManager)
         {
             Console.WriteLine("*********List Of Car***********");
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carManager.GetAll().Data)
             {
                 Console.WriteLine(car.CarId +" "+ car.CarName+" " + car.DailyPrice+" "+car.Descriptions+" "+car.ModelYear);
 
@@ -56,7 +66,7 @@ namespace ConsoleUI
         static void ListOfColor(ColorManager colorManager)
         {
             Console.WriteLine("*********List Of Color***********");
-            foreach (var color in colorManager.GetAll())
+            foreach (var color in colorManager.GetAll().Data)
             {
                 Console.WriteLine(color.ColorId + " " + color.ColorName);
 
@@ -65,7 +75,7 @@ namespace ConsoleUI
         static void ListOfBrand(BrandManager brandManager)
         {
             Console.WriteLine("*********List Of Brand***********");
-            foreach (var brand in brandManager.GetAll())
+            foreach (var brand in brandManager.GetAll().Data)
             {
                 Console.WriteLine(brand.BrandId + " " +brand.BrandName);
 

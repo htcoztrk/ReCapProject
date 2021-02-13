@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constant;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -14,46 +16,44 @@ namespace Business.Concrete
         {
             _brandDal = brandDal;
         }
-        public void Add(Brand brand)
+        public IResult Add(Brand brand)
         {
             if (brand.BrandName.Length > 2)
             {
                 _brandDal.Add(brand);
-                Console.WriteLine("Brand added successfully.");
+                return new SuccessResult(Messages.Added);
             }
             else
             {
-                Console.WriteLine("Brand Name must be longer than 2 character.");
+                return new ErrorResult(Messages.NameInvalid);
             }
         }
-
-        public void Delete(Brand brand)
+        public IResult Delete(Brand brand)
         {
             _brandDal.Delete(brand);
-            Console.WriteLine("Brand deleted successfully.");
+            return new SuccessResult(Messages.Deleted);
         }
-
-        public List<Brand> GetAll()
-        {
-            return _brandDal.GetAll();
-        }
-
-        public Brand GetCarsByBrandId(int id)
-        {
-            return _brandDal.Get(b=>b.BrandId==id);
-        }
-
-        public void Update(Brand brand)
+        public IResult Update(Brand brand)
         {
             if (brand.BrandName.Length > 2)
             {
                 _brandDal.Update(brand);
-                Console.WriteLine("Brand updated successfully.");
+                return new SuccessResult(Messages.Updated);
             }
             else
             {
-                Console.WriteLine("Brand Name must be longer than 2 character.");
+                return new ErrorResult(Messages.NameInvalid);
             }
         }
+        public IDataResult<List<Brand>> GetAll()
+        {
+            return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(),Messages.Listed);
+        }
+        public IDataResult<Brand> GetCarsByBrandId(int id)
+        {
+            return new SuccessDataResult<Brand>(_brandDal.Get(b=>b.BrandId==id));
+        }
+
+        
     }
 }
