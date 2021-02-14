@@ -16,6 +16,7 @@ namespace ConsoleUI
             BrandManager brandManager = new BrandManager(new EfBrandDal());
             UserManager userManager = new UserManager(new EfUserDal());
             CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
             // TestToAdd(carManager,brandManager, colorManager);
             //TestToUpdate(carManager, brandManager, colorManager);
             //TestToDelete(carManager, brandManager, colorManager);
@@ -27,16 +28,37 @@ namespace ConsoleUI
 
             //GetCarDetail(carManager);
 
-            //Console.WriteLine("*********Car with Colorid= 3********************");
-            //foreach (var c in carManager.GetCarsByColorId(3))
-            //{
-            //    Console.WriteLine("Car with Colorid=3"+c.CarId+" "+c.Description);
-            //}
+
             //TestToAddUser(userManager);
             //TestToAddCustomer(customerManager);
-            TestToUpdateCustomer(customerManager);
+            //TestToUpdateCustomer(customerManager);
+            TestToAddRental(rentalManager);
             Console.ReadKey();
         }
+        static void TestToAddRental(RentalManager rentalManager)
+        {
+            Console.WriteLine("*********Test To Add Rental***********");
+            var result=rentalManager.Add(new Rental { CarId=1, CustomerId=1, RentDate=new DateTime(2020,02,02), ReturnDate=new DateTime(2021,02,02) });
+            Console.WriteLine(result.Message);
+            var result2=rentalManager.Add(new Rental { CarId = 2, CustomerId = 2, RentDate = new DateTime(2020, 02, 02), ReturnDate =null });
+            Console.WriteLine(result2.Message);
+        }
+        static void TestToAddUser(UserManager userManager)
+        {
+            Console.WriteLine("************Testing to Add User***********");
+            userManager.Add(new User { FirstName = "H", LastName = "O", Email = "ho@gmail.com", Password = "h1o1" });
+            userManager.Add(new User { FirstName = "M", LastName = "O", Email = "mo@gmail.com", Password = "m1o1" });
+        }
+        static void TestToAddCustomer(CustomerManager customerManager)
+        {
+            Console.WriteLine("************Testing to Add Customer***********");
+
+            var result = customerManager.Add(new Customer { UserId = 2, CompanyName = "Company 2" });
+            Console.WriteLine(result.Message);
+
+
+        }
+
         static void GetCarDetail(CarManager carManager)
         {
             Console.WriteLine("*********Details Of Car***********");
@@ -91,22 +113,7 @@ namespace ConsoleUI
             colorManager.Add(new Color { ColorName = "Red" });
             carManager.Add(new Car { BrandId = 3, ColorId = 3, CarName="Toyota-2020", DailyPrice = 200, Descriptions = "Otomatic Dizel", ModelYear = 2010 });
          
-        }
-        static void TestToAddUser(UserManager userManager)
-        {
-            Console.WriteLine("************Testing to Add User***********");
-            userManager.Add(new User { FirstName="H", LastName="O", Email="ho@gmail.com" , Password="h1o1" });
-            userManager.Add(new User { FirstName = "M", LastName = "O", Email = "mo@gmail.com", Password = "m1o1" });
-        }
-        static void TestToAddCustomer(CustomerManager customerManager)
-        {
-            Console.WriteLine("************Testing to Add Customer***********");
-
-            var result = customerManager.Add(new Customer { UserId=2, CompanyName="Company 2" });
-            Console.WriteLine(result.Message);
-            
-
-        }
+        } 
         static void TestToUpdateCustomer(CustomerManager customerManager)
         {
             Console.WriteLine("************Testing to Update Customer***********");
@@ -116,7 +123,6 @@ namespace ConsoleUI
 
 
         }
-
         static void TestToUpdate(CarManager carManager, BrandManager brandManager, ColorManager colorManager)
         {
             Console.WriteLine("************Testing to Update operation***********");
