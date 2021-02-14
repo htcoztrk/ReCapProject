@@ -7,7 +7,7 @@ using Entities.DTOs;
 
 namespace DataAccess.Abstract
 {
-    public interface ICarDal:IEntityRepostory<Car>
+    public interface ICarDal:IEntityRepository<Car>
     {
         List<CarDetailDto> GetCarDetails();
     }
