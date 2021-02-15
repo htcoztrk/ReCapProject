@@ -19,7 +19,8 @@ namespace Business.Concrete
         }
         public IResult Add(Rental rental)
         {
-            if (rental.ReturnDate == null)
+            var rentalList = _rentalDal.GetAll(x => x.CarId == rental.CarId && x.ReturnDate == null);
+            if (rentalList.Count>0)
             {
                 return new ErrorResult(Messages.CarInRental);
 

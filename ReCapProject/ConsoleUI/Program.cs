@@ -32,9 +32,15 @@ namespace ConsoleUI
             //TestToAddUser(userManager);
             //TestToAddCustomer(customerManager);
             //TestToUpdateCustomer(customerManager);
+            // TestToDeleteRental(rentalManager);
+
+            //kiralama testinde eğer araba returndate'i null ise araba kiralanamıyor.
             TestToAddRental(rentalManager);
+
+
             Console.ReadKey();
         }
+        
         static void TestToAddRental(RentalManager rentalManager)
         {
             Console.WriteLine("*********Test To Add Rental***********");
@@ -42,6 +48,13 @@ namespace ConsoleUI
             Console.WriteLine(result.Message);
             var result2=rentalManager.Add(new Rental { CarId = 2, CustomerId = 2, RentDate = new DateTime(2020, 02, 02), ReturnDate =null });
             Console.WriteLine(result2.Message);
+            var result3 = rentalManager.Add(new Rental { CarId=3,CustomerId=2, RentDate=new DateTime(2021,02,15), ReturnDate=null });
+            Console.WriteLine(result3.Message);
+        }
+        static void TestToDeleteRental(RentalManager rentalManager)
+        {
+            var result = rentalManager.Delete(new Rental { CarId = 2, CustomerId = 1, RentalId = 1002, RentDate = new DateTime(2021, 01, 21), ReturnDate = new DateTime(2021, 02, 05) });
+            Console.WriteLine(result.Message);
         }
         static void TestToAddUser(UserManager userManager)
         {
@@ -58,7 +71,6 @@ namespace ConsoleUI
 
 
         }
-
         static void GetCarDetail(CarManager carManager)
         {
             Console.WriteLine("*********Details Of Car***********");
