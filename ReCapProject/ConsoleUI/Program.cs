@@ -35,7 +35,7 @@ namespace ConsoleUI
             // TestToDeleteRental(rentalManager);
 
             //kiralama testinde eğer araba returndate'i null ise araba kiralanamıyor.
-            TestToAddRental(rentalManager);
+            ///TestToAddRental(rentalManager);
 
 
             Console.ReadKey();
