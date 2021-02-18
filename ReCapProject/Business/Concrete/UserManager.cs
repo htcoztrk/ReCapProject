@@ -23,7 +23,7 @@ namespace Business.Concrete
         }
         public IResult Delete(User user)
         {
-            _userDal.Add(user);
+            _userDal.Delete(user);
             return new SuccessResult(Messages.Deleted);
         }
         public IDataResult<List<User>> GetAll()
