@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constant;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -21,6 +22,7 @@ namespace Business.Concrete
         }
 
         
+        [ValidationAspect(typeof(BrandValidator))]
         public IResult Add(Brand brand)
         {
             //ubusiness codes
@@ -28,7 +30,7 @@ namespace Business.Concrete
             //nesnenin yapısal olarak dogru olup olmadıgını kontrol eder (validation)
 
             
-            ValidationTool.Validate(new BrandValidator(), brand);
+          
 
                 _brandDal.Add(brand);
                 return new SuccessResult(Messages.Added);
