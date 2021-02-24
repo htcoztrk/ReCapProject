@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4OG2QQfO4P+pinYEurQl+J4xjAKOQIi4PqG5Jg8VyoZHtvggPrQgArM+uQonoUNHVsnkhPZvYzgQ0z8LGY3FrA==",
+  "dgSpecHash": "BodwvSRH9dxvKIrZnkHYTMjDEFSVuDqNNX0Pbtsr7IvUbyqD+jfBvSlIKTiZkSHq8hZsx3uBt1ESnhr6L0yeNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hp\\Desktop\\KodlamaİO\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
