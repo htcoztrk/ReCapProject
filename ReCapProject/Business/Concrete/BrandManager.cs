@@ -13,6 +13,7 @@ using System.Text;
 
 namespace Business.Concrete
 {
+
     public class BrandManager : IBrandService
     {
         IBrandDal _brandDal;
@@ -20,7 +21,6 @@ namespace Business.Concrete
         {
             _brandDal = brandDal;
         }
-
         
         [ValidationAspect(typeof(BrandValidator))]
         public IResult Add(Brand brand)
@@ -28,9 +28,7 @@ namespace Business.Concrete
             //ubusiness codes
             //validation
             //nesnenin yapısal olarak dogru olup olmadıgını kontrol eder (validation)
-
-            
-          
+         
 
                 _brandDal.Add(brand);
                 return new SuccessResult(Messages.Added);
@@ -41,6 +39,8 @@ namespace Business.Concrete
             _brandDal.Delete(brand);
             return new SuccessResult(Messages.Deleted);
         }
+
+        [ValidationAspect (typeof(BrandValidator))]
         public IResult Update(Brand brand)
         {
             if (brand.BrandName.Length > 2)
