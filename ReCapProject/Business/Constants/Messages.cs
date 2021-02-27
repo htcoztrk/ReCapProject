@@ -14,5 +14,6 @@ namespace Business.Constant
         public static string DailyPrice = "Daily Price must be bigger than 0";
         public static string MaintenanceTime = "Sisem bakımda";
         public static string CarInRental = "Car is in rental, select another Car.";
+        
     }
 }
