@@ -52,11 +52,13 @@ namespace Business.Concrete
         public IDataResult<CarImage> GetById(int carImageId)
         {
             return new SuccessDataResult<CarImage>(_carImageDal.Get(c=>c.CarImageId==carImageId));
+           
         }
 
         public IDataResult<List<CarImage>> GetCarImageByCarId(int carId)
         {
-            return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll(c=>c.CarId==carId));
+           // return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll(c=>c.CarId==carId));
+            return new SuccessDataResult<List<CarImage>>(CheckIfImageNull(carId));
         }
         [ValidationAspect(typeof(CarImageValidator))]
         public IResult Update(IFormFile file,CarImage carImage)
