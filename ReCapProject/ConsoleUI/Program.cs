@@ -1,5 +1,6 @@
 ﻿using System;
 using Business.Concrete;
+using Core.Utilities.Helpers;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
@@ -17,6 +18,11 @@ namespace ConsoleUI
             UserManager userManager = new UserManager(new EfUserDal());
             CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
             RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            CarImageManager carImageManager = new CarImageManager(new EfCarImageDal());
+
+           // var result = carImageManager.Add(new CarImage{  CarId=1, CarImageDate=new DateTime(), ImagePath="default.jpeg" });
+            //Console.WriteLine(result.Message);
+
             // TestToAdd(carManager,brandManager, colorManager);
             //TestToUpdate(carManager, brandManager, colorManager);
             //TestToDelete(carManager, brandManager, colorManager);
