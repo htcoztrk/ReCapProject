@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -16,5 +17,14 @@ namespace Business.Constant
         public static string CarInRental = "Car is in rental, select another Car.";
         public static string ImageLimitExceded = "Bir arabanın en fazla 5 resmi olabilir.";
         internal static string AuthorizationDenied;
+        internal static string AddedColor;
+        internal static string DeletedColor;
+        internal static string UpdatedColor;
+        internal static string UserAlreadyExists;
+        internal static string AccessTokenCreated;
+        internal static string SuccessfulLogin;
+        internal static User PasswordError;
+        internal static User UserNotFound;
+        internal static string UserRegistered;
     }
 }

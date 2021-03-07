@@ -1,5 +1,6 @@
 ﻿using System;
 using Business.Concrete;
+using Core.Entities.Concrete;
 using Core.Utilities.Helpers;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
@@ -65,8 +66,8 @@ namespace ConsoleUI
         static void TestToAddUser(UserManager userManager)
         {
             Console.WriteLine("************Testing to Add User***********");
-            userManager.Add(new User { FirstName = "H", LastName = "O", Email = "ho@gmail.com", Password = "h1o1" });
-            userManager.Add(new User { FirstName = "M", LastName = "O", Email = "mo@gmail.com", Password = "m1o1" });
+            //userManager.Add(new User { FirstName = "H", LastName = "O", Email = "ho@gmail.com", Password = "h1o1" });
+            //userManager.Add(new User { FirstName = "M", LastName = "O", Email = "mo@gmail.com", Password = "m1o1" });
         }
         static void TestToAddCustomer(CustomerManager customerManager)
         {
