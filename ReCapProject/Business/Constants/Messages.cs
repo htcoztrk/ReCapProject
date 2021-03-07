@@ -15,5 +15,6 @@ namespace Business.Constant
         public static string MaintenanceTime = "Sisem bakımda";
         public static string CarInRental = "Car is in rental, select another Car.";
         public static string ImageLimitExceded = "Bir arabanın en fazla 5 resmi olabilir.";
+        internal static string AuthorizationDenied;
     }
 }
