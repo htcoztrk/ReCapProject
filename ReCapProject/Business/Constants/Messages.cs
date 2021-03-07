@@ -1,5 +1,4 @@
-﻿using Core.Entities.Concrete;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -23,8 +22,8 @@ namespace Business.Constant
         internal static string UserAlreadyExists;
         internal static string AccessTokenCreated;
         internal static string SuccessfulLogin;
-        internal static User PasswordError;
-        internal static User UserNotFound;
+        internal static string PasswordError;
+        internal static string UserNotFound;
         internal static string UserRegistered;
     }
 }

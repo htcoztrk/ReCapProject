@@ -1,6 +1,5 @@
 ﻿using System;
 using Business.Concrete;
-using Core.Entities.Concrete;
 using Core.Utilities.Helpers;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
