@@ -20,6 +20,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 using Core.Utilities.Security.Encryption;
+using Microsoft.Extensions.DependencyInjection;
+using Core.Extensions;
+using Core.DependencyResolvers;
 //using Core.Extensions;
 namespace WebAPI
 {

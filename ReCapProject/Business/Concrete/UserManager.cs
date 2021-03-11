@@ -51,7 +51,7 @@ namespace Business.Concrete
 
         public List<OperationClaim> GetClaims(User user)
         {
-            return _userDal.GetClaims(user);
+            return new List<OperationClaim>(_userDal.GetClaims(user));
         }
 
         public IResult Update(User user)
