@@ -15,15 +15,12 @@ namespace Business.Constant
         public static string MaintenanceTime = "Sisem bakımda";
         public static string CarInRental = "Car is in rental, select another Car.";
         public static string ImageLimitExceded = "Bir arabanın en fazla 5 resmi olabilir.";
-        internal static string AuthorizationDenied;
-        internal static string AddedColor;
-        internal static string DeletedColor;
-        internal static string UpdatedColor;
-        internal static string UserAlreadyExists;
-        internal static string AccessTokenCreated;
-        internal static string SuccessfulLogin;
-        internal static string PasswordError;
-        internal static string UserNotFound;
-        internal static string UserRegistered;
+        public static string AuthorizationDenied="authorization denied.";
+        public static string UserAlreadyExists="user already exist";
+        public static string AccessTokenCreated="access token created";
+        public static string SuccessfulLogin="successful login";
+        public static string PasswordError="password error";
+        public static string UserNotFound="user not found";
+        public static string UserRegistered="user registered";
     }
 }

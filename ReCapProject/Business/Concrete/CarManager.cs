@@ -1,7 +1,7 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constant;
 using Business.ValidationRules.FluentValidation;
-using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -19,8 +19,9 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
-
+        [SecuredOperation("car.add,admin")]
         [ValidationAspect(typeof(CarValidator))]
+        [CacheRemoveAspect("IProductService.Get")]
         public IResult Add(Car car)
         {
             
@@ -36,6 +37,7 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(CarValidator))]
+        [CacheRemoveAspect("IrpductService.Get")]
         public IResult Update(Car car)
         {
             
@@ -45,6 +47,7 @@ namespace Business.Concrete
 
         }
 
+        [CacheAspect]//key,value
         public IDataResult<List<Car>> GetAll()
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.Listed);  
@@ -79,10 +82,22 @@ namespace Business.Concrete
 
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(),Messages.Listed);
         }
-
+        [CacheAspect]
+        [PerformanceAspect]
         public IDataResult<Car> GetById(int id)
         {
             return new SuccessDataResult<Car>(_carDal.Get(c=>c.CarId==id));
+        }
+        
+        [TransactionScopeAspect]
+        public IResult AddTransactionalTest(Car car)
+        {
+            if (car.DailyPrice < 10)
+            {
+                throw new Exception(" ");
+            }
+            Add(car);
+            return null;
         }
     }
 }
