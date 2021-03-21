@@ -78,13 +78,12 @@ namespace Business.Concrete
         }  
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()
-        {
-            if (DateTime.Now.Hour == 23)
-            {
-                return new ErrorDataResult<List<CarDetailDto>>(Messages.MaintenanceTime);
-            }
-
+        {        
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(),Messages.Listed);
+        }
+        public IDataResult<List<CarDetailDto>> GetCarDetailByCarId(int carId)
+        {
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(a=>a.CarId==carId));
         }
         [CacheAspect]
         [PerformanceAspect(100)]
@@ -103,5 +102,7 @@ namespace Business.Concrete
             Add(car);
             return null;
         }
+
+       
     }
 }
