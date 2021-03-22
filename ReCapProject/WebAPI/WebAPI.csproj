@@ -18,5 +18,19 @@
     <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\15811e0b-53be-40cf-bcfa-30db7687bb77_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\20824228-9263-4f9b-9ed4-27eb5cb7b747_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\2a42c371-b7d2-4eed-a799-3707a0d50385_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\31b7f76f-fab5-4b57-8a30-868a944161ba_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\3b01507c-3537-4520-b803-837b561485c1_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\64afbf9e-f55e-4dee-b82c-51f282048b9d_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\68b55c26-7f09-4df8-a64a-5154691ce395_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\6b955198-19a7-4599-bca7-b7850d08a755_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\6ecc2079-1a50-4719-832e-5d4ba6930bcf_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\de353cbe-d2e5-4994-a74a-4fabbb4ad9d5_3_21_2021.jpg" />
+    <None Include="wwwroot\Images\default.jpg" />
+  </ItemGroup>
+
 
 </Project>
