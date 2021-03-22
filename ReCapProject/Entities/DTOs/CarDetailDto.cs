@@ -13,6 +13,8 @@ namespace Entities.DTOs
         public decimal DailyPrice { get; set; }
         public string ImagePath { get; set; }
         public int CarId { get; set; }
+        public int ColorId { get; set; }
+        public int BrandId { get; set; }
         public string Descriptions { get; set; }
         public int ModelYear { get; set; }
 
