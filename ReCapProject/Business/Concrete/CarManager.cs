@@ -23,9 +23,9 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
-        [SecuredOperation("car.add,admin")]
-        [ValidationAspect(typeof(CarValidator))]
-        [CacheRemoveAspect("IProductService.Get")]
+        //[SecuredOperation("car.add,admin")]
+        //[ValidationAspect(typeof(CarValidator))]
+        //[CacheRemoveAspect("IProductService.Get")]
         public IResult Add(Car car)
         {
             
@@ -112,5 +112,7 @@ namespace Business.Concrete
         }
 
        
+
+
     }
 }
