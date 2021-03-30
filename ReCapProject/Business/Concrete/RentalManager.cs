@@ -8,6 +8,7 @@ using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Business.Concrete
@@ -52,6 +53,24 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetail());
         }
+
+        public IDataResult<Rental> GetRentalDetailsByCarId(int carId)
+        {
+            return new SuccessDataResult<Rental>(_rentalDal.GetRentalDetailByCarId(r => r.CarId == carId));
+        }
+
+        public IResult IsRentable(Rental rental)
+        {
+           
+                var result = _rentalDal.GetAll();
+                if (result.Where(r => r.CarId == rental.CarId
+                        && r.ReturnDate >= rental.RentDate
+                        && r.RentDate <= rental.ReturnDate).Any())
+                    return new ErrorResult(Messages.RentalInValid);
+                return new SuccessResult(Messages.CarIsRentable);
+            
+        }
+
         [ValidationAspect(typeof(RentalValidator))]
         public IResult Update(Rental rental)
         {

@@ -5,13 +5,14 @@ using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
     public class EfRentalDal : EfEntityRepositoryBase<Rental, EfContextDal>, IRentalDal
     {
-        public List<RentalDetailDto> GetRentalDetail()
+        public List<RentalDetailDto> GetRentalDetail(Expression<Func<RentalDetailDto, bool>> filter = null)
         {
             using (EfContextDal context=new EfContextDal())
             {
@@ -30,9 +31,21 @@ namespace DataAccess.Concrete.EntityFramework
                                  LastName =user.LastName, RentalId=rental.RentalId,
                                  RentDate =rental.RentDate, ReturnDate=rental.ReturnDate
                              };
-                return result.ToList();
+                // return result.ToList();
+                return filter == null
+              ? result.ToList()
+              : result.Where(filter).ToList();
             }
 
+        }
+
+        public Rental GetRentalDetailByCarId(Expression<Func<Rental, bool>> filter = null)
+        {
+            using (EfContextDal context = new EfContextDal())
+            {
+                var data = context.Rentals.Where(filter).ToList().LastOrDefault();
+                return data;
+            }
         }
     }
 }
