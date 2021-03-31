@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
             {
                 return Ok(result);
             }
-            return BadRequest(result.Message);
+            return BadRequest(result);
         }
         [HttpPost("update")]
         public IActionResult Update(Rental rental)

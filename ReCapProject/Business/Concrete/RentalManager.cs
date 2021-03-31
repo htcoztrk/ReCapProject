@@ -23,8 +23,23 @@ namespace Business.Concrete
         [ValidationAspect(typeof(RentalValidator))]
         public IResult Add(Rental rental)
         {
-            var rentalList = _rentalDal.GetAll(x => x.CarId == rental.CarId && x.ReturnDate == null);
-            if (rentalList.Count>0)
+
+            var result = _rentalDal.GetAll();
+            if (result.Where(r => r.CarId == rental.CarId
+                    && r.ReturnDate >= rental.RentDate
+                    && r.RentDate <= rental.ReturnDate).Any())
+            {
+                return new ErrorResult(Messages.CarInRental);
+            }
+            else
+            {
+                _rentalDal.Add(rental);
+                return new SuccessResult(Messages.Added);
+            }
+
+
+            /*var rentalList = _rentalDal.GetAll(x => x.CarId == rental.CarId && x.ReturnDate == null);
+            if (rentalList.Count > 0)
             {
                 return new ErrorResult(Messages.CarInRental);
 
@@ -33,8 +48,8 @@ namespace Business.Concrete
             {
                 _rentalDal.Add(rental);
                 return new SuccessResult(Messages.Added);
-            }
-           
+            }*/
+
         }
         public IResult Delete(Rental rental)
         {
