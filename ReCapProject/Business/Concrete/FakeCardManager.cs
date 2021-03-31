@@ -28,9 +28,9 @@ namespace Business.Concrete
             return new SuccessDataResult<List<FakeCard>>(_fakeCardDal.GetAll());
         }
 
-        public IDataResult<FakeCard> GetById(int carId)
+        public IDataResult<FakeCard> GetById(int cardId)
         {
-            return new SuccessDataResult<FakeCard>(_fakeCardDal.Get(c => c.CardId == carId));
+            return new SuccessDataResult<FakeCard>(_fakeCardDal.Get(c => c.CardId == cardId));
         }
 
         public IResult IsCardExist(FakeCard fakeCard)
