@@ -16,7 +16,7 @@ namespace Business.ValidationRules.FluentValidation
             //RuleFor(b => b.BrandId).GreaterThanOrEqualTo(10).When(b => b.BrandId == 1);
 
             //şimdi olmayan bir kuralı biz kendimiz yazalım:StartWithA bizim methodumuz
-            RuleFor(b => b.BrandName).Must(StartWithA);
+            RuleFor(b => b.BrandName).Must(StartWithA).WithMessage("A harfi ile baslamalı");
         }
 
         private bool StartWithA(string arg)
