@@ -22,7 +22,9 @@ namespace Business.Constant
         public static string PasswordError="password error";
         public static string UserNotFound="user not found";
         public static string UserRegistered="user registered";
-        internal static string RentalInValid;
-        internal static string CarIsRentable;
+        public static string RentalInValid="rental invalid";
+        public static string CarIsRentable="car is rentable";
+        public static string FindeksNotFound = "Findeks Not Found";
+
     }
 }

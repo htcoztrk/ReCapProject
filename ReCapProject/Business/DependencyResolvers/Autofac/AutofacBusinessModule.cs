@@ -45,6 +45,9 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<FakeCardManager>().As<IFakeCardService>();
             builder.RegisterType<EfFakeCardDal>().As<IFakeCardDal>();
 
+            builder.RegisterType<FindeksManager>().As<IFindeksService>();
+            builder.RegisterType<EfFindeksDal>().As<IFindeksDal>();
+
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()
