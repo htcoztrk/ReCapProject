@@ -2,6 +2,7 @@
 using Business.Constant;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -16,39 +17,42 @@ namespace Business.Concrete
     public class RentalManager : IRentalService
     {
         IRentalDal _rentalDal;
-        public RentalManager(IRentalDal rentalDal)
+        ICarService _carService;
+        IFindeksService _findeksService;
+        public RentalManager(IRentalDal rentalDal,ICarService carService,IFindeksService findeksService )
         {
             _rentalDal = rentalDal;
+            _carService = carService;
+            _findeksService = findeksService;
+            
         }
         [ValidationAspect(typeof(RentalValidator))]
         public IResult Add(Rental rental)
         {
 
-            var result = _rentalDal.GetAll();
-            if (result.Where(r => r.CarId == rental.CarId
-                    && r.ReturnDate >= rental.RentDate
-                    && r.RentDate <= rental.ReturnDate).Any())
+            /* var result = _rentalDal.GetAll();  
+             if (result.Where(r => r.CarId == rental.CarId
+                     && r.ReturnDate >= rental.RentDate
+                     && r.RentDate <= rental.ReturnDate).Any())
+             {
+                 return new ErrorResult(Messages.CarInRental);
+             }
+             else
+             {
+                 _rentalDal.Add(rental);
+                 return new SuccessResult(Messages.Added);
+             }*/
+
+            var result = BusinessRules.Run(IsRentable(rental), CheckFindeksScore(rental));
+            if (result != null)
             {
-                return new ErrorResult(Messages.CarInRental);
+                return result;
             }
             else
             {
                 _rentalDal.Add(rental);
                 return new SuccessResult(Messages.Added);
             }
-
-
-            /*var rentalList = _rentalDal.GetAll(x => x.CarId == rental.CarId && x.ReturnDate == null);
-            if (rentalList.Count > 0)
-            {
-                return new ErrorResult(Messages.CarInRental);
-
-            }
-            else
-            {
-                _rentalDal.Add(rental);
-                return new SuccessResult(Messages.Added);
-            }*/
 
         }
         public IResult Delete(Rental rental)
@@ -85,6 +89,27 @@ namespace Business.Concrete
                 return new SuccessResult(Messages.CarIsRentable);
             
         }
+        public IResult CheckFindeksScore(Rental rental)
+        {
+            var  customer= _findeksService.GetByCustomerId(rental.CustomerId).Data;
+            var car = _carService.GetById(rental.CarId).Data;
+            if (customer == null)
+            {
+                return new ErrorResult(Messages.FindeksNotFound);
+            }
+            else
+            {
+                if (car.FindeksScore > customer.FindeksScore)
+                {
+                    return new ErrorResult(Messages.FindeksScoreNotEnough);
+                }
+                else
+                {
+                    return new SuccessResult(Messages.EnoughFindeksScore);
+                }
+            }
+        }
+            
 
         [ValidationAspect(typeof(RentalValidator))]
         public IResult Update(Rental rental)

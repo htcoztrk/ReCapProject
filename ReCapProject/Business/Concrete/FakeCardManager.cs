@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Constant;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -59,6 +60,19 @@ namespace Business.Concrete
         {
             _fakeCardDal.Update(fakeCard);
             return new SuccessResult();
+        }
+
+        public IDataResult<FakeCard> GetByCustomerId(int customerId)
+        {
+
+            var fakeCard=_fakeCardDal.Get(f => f.CustomerId == customerId);
+            if (fakeCard == null) { return new ErrorDataResult<FakeCard>(Messages.CardNotFound); }
+            else
+            {
+                return new SuccessDataResult<FakeCard>(fakeCard);
+            }
+           
+
         }
     }
 }

@@ -17,6 +17,7 @@ namespace Business.Abstract
         IDataResult<List<RentalDetailDto>> GetRentalDetails();
         IDataResult<Rental> GetRentalDetailsByCarId(int carId);
         IResult IsRentable(Rental rental);
+        IResult CheckFindeksScore(Rental rental);
 
     }
 }

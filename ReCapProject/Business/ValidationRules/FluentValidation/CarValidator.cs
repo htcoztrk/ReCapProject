@@ -12,6 +12,7 @@ namespace Business.ValidationRules.FluentValidation
         {
             RuleFor(c=>c.DailyPrice).GreaterThan(0).WithMessage("Daily Price must be bigger than 0");
             RuleFor(c => c.CarName).MinimumLength(3).WithMessage("Car Name must be more than two chatacter.");
+            RuleFor(c => c.FindeksScore).InclusiveBetween(0, 1900).WithMessage("Findeks score must be between 0-1900");
         }
 
     }

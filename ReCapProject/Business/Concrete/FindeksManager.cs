@@ -54,8 +54,8 @@ namespace Business.Concrete
 
         public IResult Update(Findeks findeks)
         {
-            var newFindeks = CalculateFindeksScore(findeks).Data;
-            _findeksDal.Update(newFindeks);
+           //// var newFindeks = CalculateFindeksScore(findeks).Data;
+            _findeksDal.Update(findeks);
             return new SuccessResult(Messages.Updated);
         }
     }

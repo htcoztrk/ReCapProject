@@ -25,6 +25,8 @@ namespace Business.Constant
         public static string RentalInValid="rental invalid";
         public static string CarIsRentable="car is rentable";
         public static string FindeksNotFound = "Findeks Not Found";
-
+        public static string CardNotFound = "Card Not Found";
+        public static string FindeksScoreNotEnough = "yur findeks score not enough to rent this car";
+        public static string EnoughFindeksScore = "your findeks score is enough to rent this car";
     }
 }
