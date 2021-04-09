@@ -31,6 +31,7 @@ namespace DataAccess.Concrete.EntityFramework
                                BrandName=brand.BrandName, ColorName=col.ColorName, 
                                DailyPrice=car.DailyPrice, Descriptions=car.Descriptions,
                                ModelYear=car.ModelYear,  BrandId=brand.BrandId, ColorId=col.ColorId,
+                               FindeksScore=car.FindeksScore,
                                ImagePath = (from a in context.CarImages where a.CarId == car.CarId select a.ImagePath).FirstOrDefault()
                            };
 

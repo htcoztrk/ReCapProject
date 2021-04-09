@@ -17,7 +17,7 @@ namespace ConsoleUI
             BrandManager brandManager = new BrandManager(new EfBrandDal());
             UserManager userManager = new UserManager(new EfUserDal());
             CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
-            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+           // RentalManager rentalManager = new RentalManager(new EfRentalDal());
             CarImageManager carImageManager = new CarImageManager(new EfCarImageDal());
 
            // var result = carImageManager.Add(new CarImage{  CarId=1, CarImageDate=new DateTime(), ImagePath="default.jpeg" });

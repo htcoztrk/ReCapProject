@@ -17,6 +17,7 @@ namespace Entities.DTOs
         public int BrandId { get; set; }
         public string Descriptions { get; set; }
         public int ModelYear { get; set; }
+        public int FindeksScore { get; set; }
 
     }
 }
