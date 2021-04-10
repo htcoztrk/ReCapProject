@@ -62,14 +62,14 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public IDataResult<FakeCard> GetByCustomerId(int customerId)
+        public IDataResult<List<FakeCard>> GetByCustomerId(int customerId)
         {
 
-            var fakeCard=_fakeCardDal.Get(f => f.CustomerId == customerId);
-            if (fakeCard == null) { return new ErrorDataResult<FakeCard>(Messages.CardNotFound); }
+            var fakeCard=_fakeCardDal.GetAll(f => f.CustomerId == customerId);
+            if (fakeCard == null) { return new ErrorDataResult<List<FakeCard>>(Messages.CardNotFound); }
             else
             {
-                return new SuccessDataResult<FakeCard>(fakeCard);
+                return new SuccessDataResult<List<FakeCard>>(fakeCard);
             }
            
 
