@@ -20,24 +20,28 @@ Bu proje Katmanlı Mimarı yapısıyla, SOLID prensiplerine uygun olarak hazırl
 ![alt text](https://github.com/htcoztrk/ReCapProject/blob/master/images/entity.PNG "Logo Title Text 1")
 
 <p id="dataccess"></p>
+
 ### DataAccess Layer
 
 
 ![alt text](https://github.com/htcoztrk/ReCapProject/blob/master/images/dataccess.PNG "Logo Title Text 1")
 
 <p id="business"></p>
+
 ### Business Layer
 
 
 ![alt text](https://github.com/htcoztrk/ReCapProject/blob/master/images/business.PNG "Logo Title Text 1")
 
 <p id="core"></p>
+
 ### Core Layer
 
 
 ![alt text](https://github.com/htcoztrk/ReCapProject/blob/master/images/core.PNG "Logo Title Text 1")
 
 <p id="webapi"></p>
+
 ### WebApı Layer
 
 
