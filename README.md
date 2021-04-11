@@ -1,5 +1,8 @@
 # ReCapProject
+
+![alt text](https://github.com/htcoztrk/ReCapProject/blob/master/ReCapProject/WebAPI/wwwroot/Images/default.jpg "Logo Title Text 1")
 # Introduction
+
 Bu proje Katmanlı Mimarı yapısıyla, SOLID prensiplerine uygun olarak hazırlanmış Araba Kiralama projesidir.
 ### Katmanlar
 <ul>
@@ -11,6 +14,9 @@ Bu proje Katmanlı Mimarı yapısıyla, SOLID prensiplerine uygun olarak hazırl
 </ul>
 
 <p id="entity">Entity Layer</p>
+
+![alt text](https://github.com/htcoztrk/ReCapProject/blob/master/ReCapProject/WebAPI/wwwroot/Images/default.jpg "Logo Title Text 1")
+
 <p id="dataccess">DataAccess Layer</p>
 <p id="business">Business Layer</p>
 <p id="core">Core Layer</p>
